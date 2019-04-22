@@ -20,6 +20,9 @@
                         <div class="form-group">
                             <label for="text">Images</label><br>
                             <input type="file" name="images" size="20" />
+                            <?php if (!empty($error)) { ?>
+                                <small class="form-text text-danger"><?= $error ?></small>
+                            <?php } ?>
                         </div>
                         <div class="form-group">
                             <label for="jurusan">Content</label>

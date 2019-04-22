@@ -21,7 +21,7 @@
           Published Novel
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Published Novel List</a>
+          <a class="dropdown-item" href="<?php echo base_url() ?>List_Novel/listnovel/">Published Novel List</a>
         </div>
       </li>
       <li class="nav-item dropdown">

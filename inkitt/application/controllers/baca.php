@@ -5,14 +5,15 @@ class Baca extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model("novel_model");
+		$this->load->model("baca_model");
 		$this->load->library("form_validation");
 	}
     
-    public function index()
+    public function novel($id)
 	{
 
         $data['judul'] = 'Baca Novel';
-        $data['isi_novel'] = $this->baca_model->getAll();
+        $data['isi_novel'] = $this->baca_model->getAll($id);
 		$this->load->view('header', $data);
 		$this->load->view('baca', $data);
 		$this->load->view('footer');
