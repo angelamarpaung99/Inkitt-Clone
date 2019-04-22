@@ -1,7 +1,7 @@
 <body>
     <br>
     <div class="container">
-        <h1 clas>Baca Novel</h1>
+        <h1 clas>Price Novel</h1>
     </div>
     <br><br><br>
     <div class="container">
@@ -12,7 +12,7 @@
                     <div class="col-4">
                         <h2><b><p><?=$baca->judul;?></p></b></h2>
                         <p><?=$baca->Username;?></p><br>
-                        <p><a href="<?php echo base_url() ?>baca/novel/<?=$baca->id;?>"><button type="button" class="btn btn-primary">Read</button></a></p><br>
+                        <p><?=$baca->harga;?></p><br><br>
                     </div>
                 </div><br>
             <?php }

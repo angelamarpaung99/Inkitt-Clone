@@ -26,8 +26,9 @@ class View extends CI_Controller
 		$data['judul'] = 'Add Novels';
 
 		$this->form_validation->set_rules('title', 'Title','required');
-		$this->form_validation->set_rules('auth', 'Author','required');
-        $this->form_validation->set_rules('content', 'content','required');
+		$this->form_validation->set_rules('Username', 'Username','required');
+		$this->form_validation->set_rules('content', 'content','required');
+		$this->form_validation->set_rules('harga', 'harga','required');
 
         $config['upload_path']          = './uploads/';
         $config['allowed_types']        = 'gif|jpg|png';
@@ -76,8 +77,9 @@ class View extends CI_Controller
         $data['id_novel'] = $id;
 
 		$this->form_validation->set_rules('title', 'Title','required');
-		$this->form_validation->set_rules('auth', 'Author','required');
-        $this->form_validation->set_rules('content', 'content','required');
+		$this->form_validation->set_rules('Username', 'Username','required');
+		$this->form_validation->set_rules('content', 'content','required');
+		$this->form_validation->set_rules('harga', 'harga','required');
 
 
         if ($this->form_validation->run() == false) {

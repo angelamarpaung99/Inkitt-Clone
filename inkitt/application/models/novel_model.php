@@ -13,9 +13,10 @@ class novel_model extends CI_model
 	{
 		$data = [
 			"judul" => $this->input->post('title', true),
-			"author" => $this->input->post('auth', true),
+			"Username" => $this->input->post('Username', true),
 			"gambar" => $file,
 			"isi" => $this->input->post('content', true),
+			"harga" => $this->input->post('harga', true),
 		];
 
 		return $this->db->insert('isi_novel', $data);
@@ -38,8 +39,9 @@ class novel_model extends CI_model
 	{
 		$data = [
 			"judul" => $this->input->post('title', true),
-			"author" => $this->input->post('auth', true),
+			"Username" => $this->input->post('Username', true),
 			"isi" => $this->input->post('content', true),
+			"harga" => $this->input->post('harga', true),
 		];
 		$this->db->where('id', $id);
 		return $this->db->update('isi_novel', $data);
@@ -49,7 +51,7 @@ class novel_model extends CI_model
 	{
 		$keyword = $this->input->post('keyword', true);
 		$this->db->like('judul', $keyword, 'both');
-		$this->db->or_like('author', $keyword, 'both');
+		$this->db->or_like('Username', $keyword, 'both');
 		return $this->db->get('isi_novel')->result_array();
 
 

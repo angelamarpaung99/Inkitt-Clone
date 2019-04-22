@@ -14,8 +14,8 @@
                         </div>
                         <div class="form-group">
                             <label for="auth">Author</label>
-                            <input type="text" class="form-control" id="auth" name="auth">
-                            <small class="form-text text-danger"><?= form_error('auth') ?>.</small>
+                            <input type="text" class="form-control" id="Username" name="Username">
+                            <small class="form-text text-danger"><?= form_error('Username') ?>.</small>
                         </div>
                         <div class="form-group">
                             <label for="text">Images</label><br>
@@ -28,6 +28,11 @@
                             <label for="jurusan">Content</label>
                             <textarea class="form-control" id="content" name="content" rows="3"></textarea>
                             <small class="form-text text-danger"><?= form_error('content') ?>.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="auth">Price</label>
+                            <input type="text" class="form-control" id="harga" name="harga">
+                            <small class="form-text text-danger"><?= form_error('harga') ?>.</small>
                         </div>
                         <button type="submit" name="tambah" class="btn btn-primary float-right">Add</button>
                     </form>

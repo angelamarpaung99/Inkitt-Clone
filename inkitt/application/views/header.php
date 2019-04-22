@@ -10,7 +10,7 @@
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="<?php echo base_url() ?>">
         <img src="<?php echo base_url() ?>assets/inkitt-logo1.jpg"  height="20" alt="">
     </a>
 
@@ -21,7 +21,7 @@
           Published Novel
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?php echo base_url() ?>List_Novel/listnovel/">Published Novel List</a>
+          <a class="dropdown-item" href="<?php echo base_url() ?>Price_Novel/pricenovel/">Published Novel List</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -29,7 +29,7 @@
           Read Free Stories
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Novel List</a>
+          <a class="dropdown-item" href="<?php echo base_url() ?>List_Novel/listnovel/">Novel List</a>
         </div>
       </li>
     </ul>

@@ -41,14 +41,16 @@
                         <th class="text-center" scope="col">TITLE</th>
                         <th class="text-center" scope="col">AUTHOR</th>
                         <th class="text-center" scope="col">IMAGES</th>
+                        <th class="text-center" scope="col">PRICE</th>
                         <th class="text-center" scope="col">ACTION</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr><?php foreach ($isi_novel as $novel) : ?>
                         <td class="text-center"><?= $novel['judul']; ?></td>
-                        <td class="text-center"><?= $novel['author']; ?></td>
+                        <td class="text-center"><?= $novel['Username']; ?></td>
                         <td class="text-center"><?= $novel['gambar']; ?></td>
+                        <td class="text-center"><?= $novel['harga']; ?></td>
                         <td class="text-center">
                             <a href="<?= base_url(); ?>view/hapus/<?= $novel['id'] ?>" class="badge badge-danger float-center" onclick="return confirm('Apakah anda yakin menghapus data ini?');" ?>Delete</a>
                             <a href="<?= base_url(); ?>view/ubah/<?= $novel['id'] ?>" class="badge badge-success float-center" ?>Edit</a>

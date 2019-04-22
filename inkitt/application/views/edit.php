@@ -15,13 +15,18 @@
                         </div>
                         <div class="form-group">
                             <label for="auth">Author</label>
-                            <input type="text" class="form-control" id="auth" name="auth" value=<?= $isi_novel['author'] ?>>
-                            <small class="form-text text-danger"><?= form_error('auth') ?>.</small>
+                            <input type="text" class="form-control" id="Username" name="Username" value=<?= $isi_novel['Username'] ?>>
+                            <small class="form-text text-danger"><?= form_error('Username') ?>.</small>
                         </div>
                         <div class="form-group">
                             <label for="jurusan">Content</label>
                             <textarea class="form-control" id="content" name="content" rows="3"><?= $isi_novel['isi'] ?></textarea>
                             <small class="form-text text-danger"><?= form_error('content') ?>.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="auth">Price</label>
+                            <input type="text" class="form-control" id="harga" name="harga" value=<?= $isi_novel['harga'] ?>>
+                            <small class="form-text text-danger"><?= form_error('auth') ?>.</small>
                         </div>
                         <button type="submit" name="tambah" class="btn btn-primary float-right">Change</button>
                     </form>
