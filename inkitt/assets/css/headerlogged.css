@@ -1,0 +1,373 @@
+.navbar {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  height: 60px;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  position: relative;
+
+}
+
+nav{
+  margin: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+
+}
+
+body{
+  color: #292b2c;
+}
+
+
+.container {
+    max-width: 1343px;
+}
+
+
+img{
+   position: relative; 
+   width: 70px; 
+   left: 0px; 
+   background-size: contain;
+   margin-left: 5px;
+   padding-left: 0px;
+}
+
+.ml-auto, .mr-auto {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.search_icon{
+    border: none;
+    padding: 0 13px 0 7px;
+    background-color: transparent;
+}
+
+.navigation-hoverable {
+    position: relative;
+}
+
+.navigation-button{
+  background-color: transparent;
+  border: none;
+  font: 700 14px Helvetica Neue,Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  line-height: 40px;
+  height: 40px;
+  transition: background-color .25s,color .25s;
+  border-radius: 20px;
+  white-space: nowrap;
+  color: inherit;
+  padding: 0 25px;
+}
+    
+body{
+    margin: 0;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #292b2c;
+    background-color: #fff;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+        display: block;
+}
+
+.nav-item {
+    display: inline-block;
+    border-bottom: none;
+    position: static;
+}
+
+
+.navigation_list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.navigation-list__title {
+  line-height: 60px;
+  padding: 0 15px;
+  font-size: inherit;
+  font-weight: 500;
+  transition: color .25s;
+  display: block;
+  color: inherit;
+
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;   
+}
+
+
+ul{
+    margin-top: 0;
+}
+
+
+div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+
+
+
+input{
+  touch-action: manipulation;
+}
+
+
+
+
+.modal-content {
+    background-color: #eee!important;
+    padding: 15px 25px;
+    width: 95%;
+    max-width: 522px;
+    border: 1px solid #888;
+    position: center;
+}
+
+.modal{
+    display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1050; /* Sit on top */
+  top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+
+
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.login-signup-wrapper_show {
+    opacity: 1;
+    height: auto;
+    display: block;
+}
+
+
+.modal-content .login-signup-inner {
+    padding: 20px 50px;
+}
+
+.login-signup-inner {
+    position: relative;
+}
+
+
+
+.login-signup__title {
+  margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.signup-input-fields-wrapper {
+    margin: 0 0 10px;
+}
+
+.signup-input-fields-wrapper input {
+    padding: 0 35px;
+    height: 45px;
+    font-size: 18px;
+     margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+.signup-input-fields-wrapper input:last-of-type {
+    margin-bottom: 35px;
+}
+
+header{
+  display: block;
+}
+
+form,div,i{
+      margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+
+.login-signup-btn {
+    position: relative;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 4px;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color .1s ease;
+    display: block;
+    width: 100%;
+    border: none;
+    height: 50px;
+    background-color: #171717;
+
+}
+
+.login-signup-btn_facebook {
+    background-color: #3b5998;
+}
+
+.signup-input-fields-wrapper .error-wrapper-small, .signup-input-fields-wrapper .login-signup-social-media-error {
+    text-align: center;
+    color: #f72349;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+    text-decoration: none;
+}
+
+.modal-content .link-small {
+    font-size: 14px;
+}
+
+.modal-content .or-divider {
+
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-top: 1px solid #b3b3b1;
+    text-align: center;
+}
+
+.modal-content .or-divider span {
+    font-size: 20px;
+}
+
+.modal-content .or-divider span {
+    display: inline-block;
+    background-color: #eee;
+    padding: 0 35px;
+    position: relative;
+    top: -10px;
+}
+
+.login-signup-btn_socia{
+    margin-right: 5px;
+    font-size: 18px;
+    position: absolute;
+    left: 35px;
+    display: none;
+}
+
+.login-signup-btn_google {
+    background-color: #4285f4;
+}
+
+
+
+.login-signup-subtitle {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+
+a {
+    color: #0275d8;
+}
+
+
+
+button{
+      text-transform: none;
+      overflow: visible;
+      font-family: sans-serif;
+      margin: 0;
+
+}
+
+div{
+  display: block;
+}
+
+
+.fa-facebook-f, .fa-google-plus-g{
+    position: absolute;
+    left: 10px;
+    font-size: 26px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#id01, #id02{
+  padding: 16px;
+}
+
+
+.login-signup-terms {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.have-an-account-subtitle, .login-signup-subtitle {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
