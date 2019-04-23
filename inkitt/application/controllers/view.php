@@ -16,9 +16,9 @@ class View extends CI_Controller
 		if ($this->input->post('keyword')) {
 			$data['isi_novel'] = $this->novel_model->cariDataNovel();
 		}
-		$this->load->view('header', $data);
+		$this->load->view('headerlogged', $data);
 		$this->load->view('view', $data);
-		$this->load->view('footer');
+		$this->load->view('Landing/Footer');
     }
 
     public function tambah()
@@ -40,7 +40,7 @@ class View extends CI_Controller
         $this->load->library('upload', $config);
 
 		if ($this->form_validation->run() == false) {
-			$this->load->view('header', $data);
+			$this->load->view('headerlogged', $data);
 			$this->load->view('add');
 			$this->load->view('Landing/Footer');
 		}else{
@@ -48,7 +48,7 @@ class View extends CI_Controller
                 {
                         $error = array('error' => $this->upload->display_errors());
 
-                        $this->load->view('header', $data);
+                        $this->load->view('headerlogged', $data);
 			            $this->load->view('add', $error);
 			            $this->load->view('Landing/Footer');
                 }
@@ -58,7 +58,7 @@ class View extends CI_Controller
 
                         $this->novel_model->tambahNovel($upload_data['file_name']);
 			            $this->session->set_flashdata('flash','added success');
-			            redirect('view');
+			            redirect('View/view');
                 }
 		}
     }
@@ -67,7 +67,7 @@ class View extends CI_Controller
 	{
 		$this->novel_model->hapusNovel($id);
 		$this->session->set_flashdata('flash', 'deleted');
-		redirect('view');
+		redirect('View/view');
     }
     
     public function ubah($id)
@@ -85,7 +85,7 @@ class View extends CI_Controller
 
 
         if ($this->form_validation->run() == false) {
-			$this->load->view('header', $data);
+			$this->load->view('headerlogged', $data);
 			$this->load->view('edit', $data);
 			$this->load->view('Landing/Footer');
 		}else{
@@ -93,7 +93,7 @@ class View extends CI_Controller
             var_dump($this->input->post('id'));
 
 			            $this->session->set_flashdata('flash','edited success');
-			            redirect('view');
+			            redirect('View/view');
 		}
 	}
 }
