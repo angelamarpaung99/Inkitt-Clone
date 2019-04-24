@@ -31,13 +31,11 @@
                                                     </div>
                                                 </header>
                                                 <div class="bookshop-book__desc">
-                                                    <p class="bookshop-book__desc-text">Tes
-                                                    </p>
                                                     <a class="bookshop-inline-expander bookshop-book__desc-expander" href="<?php echo base_url() ?>baca/novel/<?=$baca->id;?>">Read More...
                                                     </a> 
                                                 </div>
                                                 <div class="bookshop-book__buy">
-                                                    <a class="bookshop-book__buy-btn" href="<?php echo base_url() ?>baca/novel/<?=$baca->id;?>">buy now
+                                                    <a class="bookshop-book__buy-btn" href="#">buy now
                                                     </a>
                                                     <span class="bookshop-book__buy-price"><?= $baca->harga;?>
                                                     </span>

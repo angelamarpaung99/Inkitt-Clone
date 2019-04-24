@@ -12,16 +12,16 @@ class Landing extends CI_Controller {
         $data['title'] = "Login";
         $this->load->model("list_model");
         $data['isi_novel'] = $this->list_model->getAll();
-        $this->load->view('Landing/Header', $data);
-        $this->load->view('Landing/Home', $data);
+        $this->load->view('Landing/HeaderLogin', $data);
+        $this->load->view('Landing/Login', $data);
         $this->load->view('Landing/Footer');
         
     }
     
     public function Register() {
         $data['title'] = "Register";
-        $this->load->view('Landing/Header', $data);
-        $this->load->view('Landing/Home');
+        $this->load->view('Landing/HeaderRegister', $data);
+        $this->load->view('Landing/Register');
         $this->load->view('Landing/Footer');
     }
 

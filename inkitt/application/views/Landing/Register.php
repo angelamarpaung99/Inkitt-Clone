@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <title><?php echo $title ?></title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -70,37 +71,6 @@
     <div id="id01" class="modal" >
         <div class="modal-dialog">
             <div class="modal-content">
-                <div id="form1" class="login-signup-wrapper js-login-signup-signin login-signup-wrapper_show">
-                    <div class="login-signup-inner">
-                        <header class="login-signup__title">Sign in to Inkitt
-                            <span onclick="closeForm1()" class="close" title="Close Modal">&times;</span>
-                        </header>
-                        <form action="<?=site_url('index.php/usercontroller/signin')?>" method="POST" class="signup-input-fields-wrapper" id="login-form">
-                            <input class="signin-email" type="text" name="your_name" id="your_name" placeholder="Username" required>
-                            <input id="your_pass" name="your_pass" placeholder="Password" type="password" required>
-                            <button name="signin" id="signin" class="login-signup-btn login-signup-btn-dark" type="submit">Sign in
-                            </button>
-                            <div class="error-wrapper-small js-login-error"></div>
-                        </form>
-                        <a class="link-small js-login-signup-switcher" href="#">Forgot your password?
-                        </a>
-                        <div class="or-divider">
-                            <span>Or</span>
-                        </div>
-                        <div class="login-signup-social">
-                            <button class="login-signup-btn login-signup-btn_social login-signup-btn_facebook">
-                                <i class="fab fa-facebook-f"></i>Sign in with Facebook
-                            </button>
-                            <button class="login-signup-btn login-signup-btn_social login-signup-btn_google">
-                                <i class="fab fa-google-plus-g"></i>Sign in with Google 
-                            </button>
-                            <div class="error-wrapper-small js-login-social-error"></div>
-                        </div>
-                        <div class="login-signup-subtitle">You can also
-                            <a class="js-login-signup-switcher" href="#">sign up</a>
-                        </div>
-                    </div>
-                </div>
                 <div id="form2" class="login-signup-wrapper js-login-signup-signin login-signup-wrapper_show">
                     <div class="login-signup-inner">
                         <header class="login-signup__title">Sign up with email
@@ -128,7 +98,7 @@
                             <a target="_blank" href="#">Privacy Policy</a>
                         </div>
                         <div class="have-an-account-subtitle login-signup-subtitle">Have an account?
-                            <a class="js-login-signup-switcher" href="#">Sign in</a>
+                            <a class="js-login-signup-switcher" href="<?php echo base_url() ?>Landing/index">Sign in</a>
                         </div>
                     </div>
                 </div>

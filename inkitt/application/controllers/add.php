@@ -14,6 +14,6 @@ class Add extends CI_Controller
         $data['judul'] = 'Add Novel';
 		$this->load->view('headerlogged', $data);
 		$this->load->view('add', $data);
-		$this->load->view('footer');
+		$this->load->view('Landing/Footer');
     }
 }
